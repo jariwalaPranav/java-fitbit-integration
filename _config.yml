@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
 plugins:
   - jekyll-seo-tag
-
-google_site_verification: DTHLlQoax9E4QvXoCy36MF74CcLaKpdlQolAy1u8x6w
+webmaster_verifications:
+  google: DTHLlQoax9E4QvXoCy36MF74CcLaKpdlQolAy1u8x6w
