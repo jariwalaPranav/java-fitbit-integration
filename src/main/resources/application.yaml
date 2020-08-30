@@ -1,0 +1,22 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          fitbit:
+            clientId: <client id>
+            authorizationGrantType: "authorization_code"
+            clientSecret: <client secret>
+            redirectUri: "http://localhost:8080/login/oauth2/code/fitbit"
+            scope:
+              - heartrate
+              - sleep
+              - profile
+              - weight
+        provider:
+          fitbit:
+            authorizationUri: https://www.fitbit.com/oauth2/authorize
+            tokenUri: https://api.fitbit.com/oauth2/token
+            userInfoUri: https://api.fitbit.com/1/user/-/profile.json
+            userNameAttribute: user
+
